@@ -1,32 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Bar</title>
+  <style>
+    /* Reset default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+
+    /* Navigation bar styling */
+    nav {
+      width: 100%;
+      height: 15%;
+      background-image: url("https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1350&q=80");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+    nav .logo {
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #5bc0be; /* Accent hover color */
+    }
+  </style>
 </head>
 <body>
-    <div>
-        <nav style="width: 10000px; height: 300px ; background-color: #40c529;">
-            <a href="./home.html">HOME</a>
-            <a href="./about.html">ABOUT</a>
-            <a href="./contact.html">CONTACT</a>
-            <a href="./profile.html">PROFILE</a>
-        </nav>
-    </div>
 
-    <br>
+  <nav>
+    <div class="logo">MyWebsite</div>
+    <ul>
+      <li><a href="./home.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./contact.html">Contact Us</a></li>
+      <li><a href="./profile.html">Profile</a></li>
+      <li><a href="./login.html">Login</a></li>
+    </ul>
+  </nav>
 
-    <div style="width: 100%; height: 100px ; background-color: #c7bf23;">
-        <span style="background-color: #cb3e3e;">Box1</span>
-        <span style="background-color: #5acb3e;">Box2</span>
-        <span style="background-color: #5c3ecb;">Box3</span>
-    </div>
+  <!-- Page content just for demo -->
+  <div style="margin-top:100px; padding:20px;">
+    <h1>Welcome to My Website</h1>
+    <p>This is a demo page with a navigation bar.</p>
+  </div>
 
-    <br>
-
-    <div style="background-color: aqua; height: 100px; ; width: 100px ; text-align:center ; align-content: center;">
-        PLOT 1
-    </div>
 </body>
 </html>
